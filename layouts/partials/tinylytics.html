@@ -5,6 +5,6 @@
         {{ .Scratch.Set "hits" "?show_hits" }}
     {{ end }}
 
-    <script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ .Scratch.Get "hits" }}' defer></script>
+<script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ .Scratch.Get "hits" }}' defer></script>
 
-    {{ end }}
+{{ end }}
