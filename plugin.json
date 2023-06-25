@@ -1,0 +1,12 @@
+{
+  "version": "1.0",
+  "title": "Tinylytics for Micro.blog",
+  "description": "A plug-in to easily add your Tinylytics tracking code.",
+  "fields": [
+    {
+      "field": "params.site_id",
+      "label": "Your Tinylytics Site Id",
+      "placeholder": "Enter your unique site id from Tinylytics"
+    }
+  ]
+}
