@@ -1,5 +1,6 @@
 {
     "params": {
-      "site_id": ""
+      "site_id": "",
+      "show_hits" : false
     }
   }

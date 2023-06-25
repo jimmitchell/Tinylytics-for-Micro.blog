@@ -1,3 +1,10 @@
 {{ if ne (.Site.Params.site_id | default "") "" }}
-    <!-- Tinylytics Web Analytics --><script src="https://tinylytics.app/embed/{{.Site.Params.site_id}}.js" defer></script><!-- End Tinylytics Web Analytics -->
+    
+    {{ if .Site.Params.show_hits true }}
+        $showHits := "?show_hits"
+    {{ else }}
+        $showHits := ""
+    {{ end }}
+
+    <script src="https://tinylytics.app/embed/{{.Site.Params.site_id}}.js{{ $showHits }}" defer></script><!-- End Tinylytics Web Analytics -->
 {{ end }}

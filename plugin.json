@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -10,6 +10,11 @@
       "field": "params.site_id",
       "label": "Site Id",
       "placeholder": "Enter your Tinylytics unique site id..."
+    },
+    {
+      "field": "params.show_hits",
+      "label": "Display hits on your site? (see README for more info)",
+      "type": "boolean"
     }
   ]
 }
