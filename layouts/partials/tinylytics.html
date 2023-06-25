@@ -7,5 +7,5 @@
         {{ $data.Set "hits" "?show_hits" }}
     {{ end }}
 
-    <script src="https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $hits.Get "hits" }}" defer></script>
+    <script src="https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $data.Get "hits" }}" defer></script>
 {{ end }}
