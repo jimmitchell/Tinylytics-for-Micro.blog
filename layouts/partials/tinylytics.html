@@ -1,5 +1,3 @@
-{{ if isset . "site_id" }}
-    {{ with .Site.Params.site_id }}
+{{ with .Site.Params.site_id }}
     <!-- Tinylytics Web Analytics --><script src="https://tinylytics.app/embed/{{.Site.Params.site_id}}.js" defer></script><!-- End Tinylytics Web Analytics -->
-    {{ end }}
 {{ end }}
