@@ -1,10 +1,11 @@
 {{ if ne (.Site.Params.site_id | default "") "" }}
     
+    {{ $hits := newScratch }}
+    {{ $hits.Set "show_hits" "" }}
+
     {{ if .Site.Params.show_hits true }}
-        $showHits := "?show_hits"
-    {{ else }}
-        $showHits := ""
+        {{ $hits.Set "show_hits" "?show_hits" }}
     {{ end }}
 
-    <script src="https://tinylytics.app/embed/{{.Site.Params.site_id}}.js{{ $showHits }}" defer></script><!-- End Tinylytics Web Analytics -->
+    <script src="https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $hits.Get 'show_hits' }}" defer></script><!-- End Tinylytics Web Analytics -->
 {{ end }}
