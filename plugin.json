@@ -1,5 +1,5 @@
 {
-  "version": "1.0.4",
+  "version": "1.0.5",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -8,13 +8,23 @@
 "fields": [
     {
       "field": "params.site_id",
-      "label": "Site Id",
+      "label": "Tinylytics Site Id",
       "placeholder": "Enter your Tinylytics unique site id..."
     },
     {
       "field": "params.show_hits",
-      "label": "Display hits? See the README for more info.",
+      "label": "Display Hits?",
       "type": "boolean"
+    },
+	{
+      "field": "params.show_kudos",
+      "label": "Display Kudos?",
+      "type": "boolean"
+    },
+	 {
+      "field": "params.kudos_label",
+      "label": "Kudos Label",
+      "placeholder": "Enter any combo of text and/or emoji 👋"
     }
   ]
 }
