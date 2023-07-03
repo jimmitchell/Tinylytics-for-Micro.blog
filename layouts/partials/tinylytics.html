@@ -1,8 +1,6 @@
 {{ if ne (.Site.Params.site_id | default "") "" }}
-    
     {{ $p := newScratch }}
     {{ $p.Set "params" "" }}
-
     {{ if or (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
         {{ $p.Add "params" "?" }}
         {{ if and (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
@@ -12,14 +10,10 @@
         {{ else if .Site.Params.show_kudos }}
             {{ $p.Add "params" "kudos" }}
         {{ end }}
-
         {{ if and (.Site.Params.show_kudos) (ne (.Site.Params.kudos_label | default "") "") }}
             {{ $p.Add "params" "=" }}
             {{ $p.Add "params" .Site.Params.kudos_label }}
         {{ end }}
-
     {{ end }}
-
-<script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ htmlUnescape $p.Get "params" | safeURL }}' defer></script>
-
+    <script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $p.Get "params" }}' defer></script>
 {{ end }}
