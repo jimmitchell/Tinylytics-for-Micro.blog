@@ -20,6 +20,6 @@
 
     {{ end }}
 
-<script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $p.Get "params" }}' defer></script>
+<script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ htmlUnescape $p.Get "params" | safeURL }}' defer></script>
 
 {{ end }}

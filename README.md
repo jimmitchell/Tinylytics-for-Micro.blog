@@ -8,7 +8,7 @@ If you haven't already, you'll need to sign up for a [Tinylytics.app](https://ti
 
 Once installed, in the plug-in settings, enter your unique site id from your [Tinylytics.app](https://tinylytics.app) site configuration as shown in this screenshot:
 
-<img src="tinylytics.jpg" alt="tinylytics site id" width="700" />
+<img src="screenshots/tinylytics.jpg" alt="tinylytics site id" width="700" />
 
 ## Displaying Hits
 
@@ -22,12 +22,59 @@ If you want to display a Kudos counter on individual post pages, check the "Show
 ````
 <button class="tinylytics_kudos"></button>
 ````
+
 See the Tinylytics "[Showing kudos](https://tinylytics.app/docs/showing_kudos)" help article for more details.
 
 In addition to a Kudos counter, you can set a label using any combination of emoji and/or text. If you don't set a label on your own, the default will show up as "👋".
 
-## Help
+## Shortcodes
 
-If you have questions or find a bug in the plug-in itself, hit me up on [Micro.blog](https://micro.blog/jimmitchell), [Mastodon](https://mastodon.social/@jimmitchell), or shoot me an [email](mailto:hello@jimmitchell.org).
+If you'd like to avoid making changes to your theme template files, you can use a shortcode embed instead.
 
-For Tinylytics support, contact [@vincent](https://micro.blog/vincent) on Micro.blog or email him at [hello@tinylytics.app](mailto:hello@tinylytics.app).
+To add a site counter to the footer of your site, simply edit your site's customer footer and add the following short code:
+
+````
+{{< tiny_hits >}}
+````
+
+An example would look something like this:
+
+<img src="screenshots/tinyhits-example.png" alt="tinylytics hits shorcode" width="700" />
+
+To add Kudos to individual posts, for example a long post with title, while leaving your short posts without Kudos, you can use a shortcode for that too:
+
+````
+{{< tiny_kudos >}}
+````
+
+An example would look something like this:
+
+<img src="screenshots/tinykudos-example.png" alt="tinylytics kudos shorcode" width="700" />
+
+## Tinylytics CSS Styles
+
+Out of the box, Tinylytics works great without any styling applied, but if you'd like to tweak the styles to better match your site, here are the CSS classes:
+
+````
+.tinylytics_hits {
+    /* styles the hit counter number only */
+}
+
+.tinylytics_kudos {
+    /* this class styles the entire Kudos button * /
+}
+
+.did_select {
+    /* styles the Kudos button to appear differnt once a Kudo is given */
+}
+````
+
+## Need Help?
+
+If you have questions or find a bug in the plug-in itself, hit me up on [Micro.blog](https://micro.blog/jimmitchell), [Mastodon](https://mastodon.social/@jimmitchell), or go old-school and shoot me an [email](mailto:hello@jimmitchell.org).
+
+For Tinylytics support, contact [@vincent](https://micro.blog/vincent) on Micro.blog, or email him at [hello@tinylytics.app](mailto:hello@tinylytics.app).
+
+## Support Development
+
+Finally, if you find this silly little plug-in is worth supporting financially, you can make a donation at my [Ko-fi](https://ko-fi.com/jimmitchellmedia) page. Thanks for your support.
