@@ -1,4 +1,4 @@
-{{ if ne (.Site.Params.site_id | default "") "" }}
+{{ if ne (.Site.Params.site_id | default "") "" }} 
     {{ $p := newScratch }}
     {{ $p.Set "params" "" }}
     {{ if or (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
