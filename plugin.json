@@ -3,7 +3,9 @@
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
-    "tinylytics.html"
+    "tinylytics.html",
+    "tinyhits.html",
+    "tinykudos.html"
 ],
 "fields": [
     {
