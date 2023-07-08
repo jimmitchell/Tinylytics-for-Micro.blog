@@ -1,5 +1,5 @@
 {
-  "version": "1.0.6",
+  "version": "2.0.0",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -24,7 +24,7 @@
 	 {
       "field": "params.kudos_label",
       "label": "Kudos Label",
-      "placeholder": "Enter any mix of text and/or emoji 👋"
+      "placeholder": "Enter any combination of text or emoji 👋"
     }
   ]
 }
