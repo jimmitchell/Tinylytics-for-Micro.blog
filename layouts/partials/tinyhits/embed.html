@@ -1,0 +1,4 @@
+{{ $context := .context }}
+{{ if ne ($context.Site.Params.site_id | default "") "" }}
+<a href="https://tinylytics.app" title="Stats via Tinylytics">Tinylytics</a>: </span><span class="tinylytics_hits"></span>
+{{ end }}
