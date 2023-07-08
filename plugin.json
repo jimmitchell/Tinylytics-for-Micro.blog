@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.0.1",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
