@@ -35,7 +35,7 @@ An example of that might look something like this:
 
 ## Showing Hits in Your Micro.blog Footer
 
-Maybe you'd like to display a hit counter in the custom footer of your Micro.blog without having to change any template files. Since shortcodes do not work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
+Maybe you'd like to display a hit counter in the global custom footer of your Micro.blog without having to change any template files. Since shortcodes do not work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
 
 ````
 {{ partial "tinyhits/embed.html" (dict "context" . ) }}
