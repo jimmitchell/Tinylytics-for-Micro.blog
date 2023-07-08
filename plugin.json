@@ -24,7 +24,7 @@
 	 {
       "field": "params.kudos_label",
       "label": "Kudos Label",
-      "placeholder": "Enter any combo of text and/or emoji 👋"
+      "placeholder": "Enter any mix of text and/or emoji 👋"
     }
   ]
 }
