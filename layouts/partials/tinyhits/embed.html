@@ -1,4 +1,4 @@
 {{ $context := .context }}
-{{ if ne ($context.Site.Params.site_id | default "") "" }}
+{{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.site_id.show_hits) }}
 <a href="https://tinylytics.app" title="Stats via Tinylytics">Tinylytics</a>: </span><span class="tinylytics_hits"></span>
 {{ end }}
