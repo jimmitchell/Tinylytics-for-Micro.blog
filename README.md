@@ -18,11 +18,11 @@ If you want to display hits somewhere on your site (say, in the footer - see bel
 
 ## Displaying Kudos
 
-If you want to display a Kudos counter on individual post pages, check the "Show Kudos?" checkbox. See the Tinylytics "[Showing kudos](https://tinylytics.app/docs/showing_kudos)" help article for more details.In addition to a Kudos counter, you can set a label using any combination of emoji and/or text. If you don't set your own label, the default emoji will be "👋".
+If you want to display a Kudos counter on individual post pages, check the "Show Kudos?" checkbox. See the Tinylytics "[Showing kudos](https://tinylytics.app/docs/showing_kudos)" help article for more details. In addition to a Kudos counter, you can set a label using any combination of emoji and/or text. If you don't set your own label, the default emoji will be "👋".
 
 ## Shortcodes
 
-If you'd like to avoid making changes to your theme template files, you can use a shortcode instead. To add a kudos or site counter to a post, simply add them into a post using the following shortcodes:
+If you'd like to avoid making changes to your theme template files, you can use shortcodes instead. To add a kudos or site counter to a post, simply add them using the following shortcodes:
 
 ````
 {{< tinykudos >}}
