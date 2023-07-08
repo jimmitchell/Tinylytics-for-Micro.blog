@@ -14,7 +14,7 @@ Once you have the plug-in installed, enter your unique site id from your [Tinyly
 
 ## Displaying Hits
 
-If you want to display hits somewhere on your site (say, in the footer - see below), check the "Display hits?" checkbox. Checkout the Tinylytics "[Showing a hit counter](https://tinylytics.app/docs/show_hit_counter)" help article for more details.
+If you want to display hits somewhere on your site (say, in the footer - more on that below), check the "Display hits?" checkbox. Checkout the Tinylytics "[Showing a hit counter](https://tinylytics.app/docs/show_hit_counter)" help article for more details.
 
 ## Displaying Kudos
 
