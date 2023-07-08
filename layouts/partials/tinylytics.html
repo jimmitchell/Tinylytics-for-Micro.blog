@@ -1,19 +1,16 @@
 {{ if ne (.Site.Params.site_id | default "") "" }} 
-    {{ $p := newScratch }}
-    {{ $p.Set "params" "" }}
+    {{ $queryParams := "" }}
     {{ if or (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-        {{ $p.Add "params" "?" }}
         {{ if and (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-            {{ $p.Add "params" "hits&kudos" }}
+            {{ $queryParams = ( print "?hits&kudos") }}
         {{ else if .Site.Params.show_hits }}
-            {{ $p.Add "params" "hits" }}
+            {{ $queryParams = ( print "?hits") }}
         {{ else if .Site.Params.show_kudos }}
-            {{ $p.Add "params" "kudos" }}
+            {{ $queryParams = ( print "?kudos") }}
         {{ end }}
         {{ if and (.Site.Params.show_kudos) (ne (.Site.Params.kudos_label | default "") "") }}
-            {{ $p.Add "params" "=" }}
-            {{ $p.Add "params" .Site.Params.kudos_label }}
+            {{ $queryParams = ( print $queryParams "=" .Site.Params.kudos_label ) }}
         {{ end }}
     {{ end }}
-    <script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $p.Get "params" }}' defer></script>
+    <script src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $queryParams }}' defer></script>
 {{ end }}
