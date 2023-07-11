@@ -2,3 +2,6 @@
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_hits) }}
 <span class="tiny_counter"><a href="https://tinylytics.app" title="Stats via Tinylytics">Tinylytics</a>: <span class="tinylytics_hits"></span></span>
 {{ end }}
+{{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_uptime) }}
+<span class="tiny_uptime">Uptime: <span class="tinylytics_uptime"></span></span>
+{{ end }}
