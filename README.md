@@ -61,7 +61,7 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
     /* Styles the entire counter <span> for a custom footer embed only */
 }
 
-.tiny_counter {
+.tiny_uptime {
     /* Styles the uptime <span> for a custom footer embed only */
 }
 
