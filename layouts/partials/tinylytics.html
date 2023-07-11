@@ -1,24 +1,22 @@
 {{ if ne (.Site.Params.site_id | default "") "" }} 
     {{ $queryParameters := "" }}
-    {{ if or (.Site.Params.show_uptime) (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-        {{ if and (.Site.Params.show_uptime) (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-			{{ $queryParameters = ( print "?uptime&hits&kudos") }}
-		{{ else if and (.Site.Params.show_uptime) (.Site.Params.show_hits) }}
-            {{ $queryParameters = ( print "?uptime&hits") }}
-        {{ else if and (.Site.Params.show_uptime) (.Site.Params.show_kudos) }}
-            {{ $queryParameters = ( print "?uptime&kudos") }}
-        {{ else if and (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-            {{ $queryParameters = ( print "?hits&kudos") }}
-        {{ else if .Site.Params.show_hits }}
-            {{ $queryParameters = ( print "?hits") }}
-        {{ else if .Site.Params.show_kudos }}
-            {{ $queryParameters = ( print "?kudos") }}
-		{{ else if .Site.Params.show_uptime }}
-            {{ $queryParameters = ( print "?uptime") }}
-        {{ end }}
-        {{ if and (.Site.Params.show_kudos) (ne (.Site.Params.kudos_label | default "") "") }}
-            {{ $queryParameters = ( print $queryParameters "=" .Site.Params.kudos_label ) }}
-        {{ end }}
+    {{ if and (.Site.Params.show_uptime) (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
+        {{ $queryParameters = ( print "?uptime&hits&kudos") }}
+    {{ else if and (.Site.Params.show_uptime) (.Site.Params.show_hits) }}
+        {{ $queryParameters = ( print "?uptime&hits") }}
+    {{ else if and (.Site.Params.show_uptime) (.Site.Params.show_kudos) }}
+        {{ $queryParameters = ( print "?uptime&kudos") }}
+    {{ else if and (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
+        {{ $queryParameters = ( print "?hits&kudos") }}
+    {{ else if .Site.Params.show_hits }}
+        {{ $queryParameters = ( print "?hits") }}
+    {{ else if .Site.Params.show_kudos }}
+        {{ $queryParameters = ( print "?kudos") }}
+    {{ else if .Site.Params.show_uptime }}
+        {{ $queryParameters = ( print "?uptime") }}
+    {{ end }}
+    {{ if and (.Site.Params.show_kudos) (ne (.Site.Params.kudos_label | default "") "") }}
+        {{ $queryParameters = ( print $queryParameters "=" .Site.Params.kudos_label ) }}
     {{ end }}
     <script defer src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $queryParameters }}'></script>
 {{ end }}
