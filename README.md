@@ -14,15 +14,19 @@ Once you have the plug-in installed, enter your unique site id from your [Tinyly
 
 ## Displaying Hits
 
-If you want to display hits somewhere on your site (say, in the footer - more on that below), check the "Display hits?" checkbox. Checkout the Tinylytics "[Showing a hit counter](https://tinylytics.app/docs/show_hit_counter)" help article for more details.
+If you want to display the total hits somewhere on your site, check the "Display hits?" checkbox. Checkout the Tinylytics "[Showing a hit counter](https://tinylytics.app/docs/show_hit_counter)" help article for more details.
 
-## Displaying Kudos
+## Displaying Post Kudos
 
 If you want to display a Kudos counter on individual post pages, check the "Show Kudos?" checkbox. See the Tinylytics "[Showing kudos](https://tinylytics.app/docs/showing_kudos)" help article for more details. In addition to a Kudos counter, you can set a label using any combination of emoji and/or text. If you don't set your own label, the default emoji will be "👋".
 
+## Displaying Uptime
+
+If you want to display the uptime of your site, check the "Display Uptime?" checkbox. Checkout the Tinylytics "[Showing Uptime on your site](https://tinylytics.app/docs/showing_uptime)" help article for more details. **Note:** Uptime monitoring is a paid account feature. If you enable the "Display Uptime?" checkbox but to not have a paid account, you'll only see an uptime label.
+
 ## Shortcodes
 
-If you'd like to avoid making changes to your theme template files, you can use shortcodes instead. To add a kudos or site counter to a post, simply add them using the following shortcodes:
+If you'd like to avoid making changes to your theme template files, you can use shortcodes instead. To add a kudos or post view counter to a post, simply add them using the following shortcodes:
 
 ````
 {{< tinykudos >}}
@@ -33,7 +37,9 @@ An example of that might look something like this:
 
 <img src="screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
 
-## Showing Hits in Your Micro.blog Footer
+**A new feature:** Adding a ``{{< tinyhits >}}`` shortcode to a post will give a number of views for just that post, not the overall site views.
+
+## Showing Total Hits and Uptime in Your Micro.blog Footer
 
 Maybe you'd like to display a hit counter in the global custom footer of your Micro.blog without having to change any template files. Since shortcodes do not work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
 
@@ -45,7 +51,6 @@ An example of that looks something like this:
 
 <img src="screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
 
-**Important Note:** You can only have one hit counter on a page at a time. If you plan to use a hit counter shortcode in a post, do not use the footer embed method. The opposite goes for a global footer counter; don't use the "tinyhits" shortcode in a post.
 
 ## Tinylytics Styles
 
@@ -53,7 +58,11 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 
 ````
 .tiny_counter {
-    /* Styles the entire counter for a custom footer embed only */
+    /* Styles the entire counter <span> for a custom footer embed only */
+}
+
+.tiny_counter {
+    /* Styles the uptime <span> for a custom footer embed only */
 }
 
 .tinylytics_hits {

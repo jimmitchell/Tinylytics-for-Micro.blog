@@ -25,6 +25,11 @@
       "field": "params.kudos_label",
       "label": "Kudos Label",
       "placeholder": "Enter any combination of text or emoji 👋"
+    },
+   {
+      "field": "params.show_uptime",
+      "label": "Display Uptime?",
+       "type": "boolean"
     }
   ]
 }
