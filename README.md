@@ -22,7 +22,7 @@ If you want to display a Kudos counter on individual post pages, check the "Show
 
 ## Displaying Uptime
 
-If you want to display the uptime of your site, check the "Display Uptime?" checkbox. Checkout the Tinylytics "[Showing Uptime on your site](https://tinylytics.app/docs/showing_uptime)" help article for more details. **Note:** Uptime monitoring is a paid account feature. If you enable the "Display Uptime?" checkbox but to not have a paid account, you'll only see an uptime label.
+If you want to display the uptime of your site, check the "Display Uptime?" checkbox. Checkout the Tinylytics "[Showing Uptime on your site](https://tinylytics.app/docs/showing_uptime)" help article for more details. **Note:** Uptime monitoring is a paid account feature. If you enable the "Display Uptime?" checkbox but do not have a paid account, you'll only see an uptime label.
 
 ## Shortcodes
 
