@@ -1,3 +1,3 @@
 {{ if and (ne (.Site.Params.site_id | default "") "") (.Site.Params.show_hits) }}
-<span class="tinylytics_hits" data-path="{{ .Page.RelPermalink }}"></span>
+    <span class="tinylytics_hits" data-path="{{ .Page.RelPermalink }}"></span>
 {{ end }}
