@@ -13,22 +13,37 @@
     },
     {
       "field": "params.show_hits",
-      "label": "Display Hits?",
+      "label": "Show Hits?",
       "type": "boolean"
     },
-	{
+	  {
+      "field": "params.show_uptime",
+      "label": "Show Uptime?",
+       "type": "boolean"
+    },
+    {
       "field": "params.show_kudos",
-      "label": "Display Kudos?",
+      "label": "Show Kudos?",
       "type": "boolean"
     },
-	 {
+    {
       "field": "params.kudos_label",
       "label": "Kudos Label",
       "placeholder": "Enter any combination of text or emoji 👋"
     },
-   {
-      "field": "params.show_uptime",
-      "label": "Display Uptime?",
+    {
+      "field": "params.show_webring",
+      "label": "Show Webring?",
+       "type": "boolean"
+    },
+	  {
+      "field": "params.webring_label",
+      "label": "Webring Label",
+      "placeholder": "Enter any combination of text or emoji 🕸️💍"
+    },
+    {
+      "field": "params.show_countries",
+      "label": "Show Country Flags?",
        "type": "boolean"
     }
   ]

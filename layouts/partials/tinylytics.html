@@ -1,22 +1,47 @@
 {{ if ne (.Site.Params.site_id | default "") "" }} 
     {{ $queryParameters := "" }}
-    {{ if and (.Site.Params.show_uptime) (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-        {{ $queryParameters = ( print "?uptime&hits&kudos") }}
-    {{ else if and (.Site.Params.show_uptime) (.Site.Params.show_hits) }}
-        {{ $queryParameters = ( print "?uptime&hits") }}
-    {{ else if and (.Site.Params.show_uptime) (.Site.Params.show_kudos) }}
-        {{ $queryParameters = ( print "?uptime&kudos") }}
-    {{ else if and (.Site.Params.show_hits) (.Site.Params.show_kudos) }}
-        {{ $queryParameters = ( print "?hits&kudos") }}
-    {{ else if .Site.Params.show_hits }}
-        {{ $queryParameters = ( print "?hits") }}
-    {{ else if .Site.Params.show_kudos }}
-        {{ $queryParameters = ( print "?kudos") }}
-    {{ else if .Site.Params.show_uptime }}
-        {{ $queryParameters = ( print "?uptime") }}
+    {{ if .Site.Params.show_hits }}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "hits") }}
     {{ end }}
-    {{ if and (.Site.Params.show_kudos) (ne (.Site.Params.kudos_label | default "") "") }}
-        {{ $queryParameters = ( print $queryParameters "=" .Site.Params.kudos_label ) }}
+    {{ if .Site.Params.show_uptime}}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "uptime") }}
+    {{ end }}
+    {{ if .Site.Params.show_webring}}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "webring") }}
+    {{ end }}
+    {{ if .Site.Params.show_countries}}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "countries") }}
+    {{ end }}
+    {{ if .Site.Params.show_kudos}}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "kudos") }}
+        {{ if ne (.Site.Params.kudos_label | default "") "" }}
+            {{ $queryParameters = ( print $queryParameters "=" .Site.Params.kudos_label) }}
+        {{ end }}
     {{ end }}
     <script defer src='https://tinylytics.app/embed/{{ .Site.Params.site_id }}.js{{ $queryParameters }}'></script>
 {{ end }}
