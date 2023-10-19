@@ -44,7 +44,7 @@ If you want to display the total hits on your site, check the "Show Country Flag
 
 ## Shortcodes
 
-If you'd like to avoid making changes to your theme template files, you can use select shortcodes instead. To add a kudos or post view counter to a post, simply add them using the following shortcodes:
+If you'd like to avoid making changes to your theme template files, you can use select shortcodes instead. To add a kudos, post view counter or country flags to a post, simply add them using the following shortcodes:
 
 ````
 {{< tinykudos >}}
@@ -52,7 +52,7 @@ If you'd like to avoid making changes to your theme template files, you can use 
 {{< tinyflags >}}
 ````
 
-An example of using a shortcode looks something like this:
+An example of using shortcodes looks something like this:
 
 <img src="screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
 
