@@ -38,7 +38,7 @@ If you want to display the Tinylytics Webring Link on your site, check the "Show
 
 ## Displaying Country Flags
 
-If you want to display the total hits on your site, check the "Show Country Flags?" checkbox. Checkout the Tinylytics "[Showing visited countries](https://tinylytics.app/docs/showing_countries)" help article for more details.
+If you want to display the total hits on your site, check the "Show Country Flags?" checkbox. Check out the Tinylytics "[Showing visited countries](https://tinylytics.app/docs/showing_countries)" help article for more details.
 
 ---
 
