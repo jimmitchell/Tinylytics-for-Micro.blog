@@ -8,6 +8,6 @@
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_webring) }}
     <span class="tiny_webring"><a href="" class="tinylytics_webring">{{ $context.Site.Params.webring_label }}</a></span>
 {{ end }}
-{{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_uptime) }}
+{{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_countries) }}
     <span class="tiny_countries"><span class="tinylytics_countries"></span></span>
 {{ end }}
