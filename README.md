@@ -1,6 +1,6 @@
 # Tinylytics-for-Micro.blog
 
-<img src="screenshots/TinylyticsHeaderArt.png" alt="Tinylytics for Micro.blog title" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/TinylyticsHeaderArt.png" alt="Tinylytics for Micro.blog title" width="1000" />
 
 A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 
@@ -18,7 +18,7 @@ Before anything else, you'll need to sign up for a [Tinylytics.app](https://tiny
 
 Once you've signed up and have the plug-in installed, enter your unique site id from your [Tinylytics.app](https://tinylytics.app) site configuration page:
 
-<img src="screenshots/tinylytics.jpg" alt="tinylytics site id example" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics.jpg" alt="tinylytics site id example" width="1000" />
 
 ## Displaying Hits
 
@@ -54,7 +54,7 @@ If you'd like to avoid making changes to your theme template files, you can use 
 
 An example of using shortcodes looks something like this:
 
-<img src="screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
 
 **A new feature:** Adding a ``{{< tinyhits >}}`` shortcode to a post will give the number of views *for just that post*, not the overall site views.
 
@@ -68,7 +68,7 @@ Maybe you'd like to display a hit counter, uptime, webring link and/or country f
 
 An example of that looks like this:
 
-<img src="screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
 
 
 ## Tinylytics Styles
