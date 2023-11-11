@@ -6,7 +6,7 @@ A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 
 > ## Save 20% on a Tinylytics Subscription
 > 
-> Save 20% off your first year by using this coupon code when you sign up:
+> Save 20% off your first year of Tinylytics by using this coupon code when you sign up:
 > 
 > ### **TINYPLUGINMB**
 > 
