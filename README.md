@@ -12,6 +12,10 @@ A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 > 
 > *Note: This coupon is only good for new accounts and requires you to select the yearly plan option at sign up. See the sign up link below.*
 
+## Support Development
+
+If you find this plug-in is worth supporting financially, you can make a donation on my [Ko-fi](https://ko-fi.com/jimmitchellmedia) page. It's not required to use the plug-in, but if you do decide to, I'd like to thank you very much in advance for your support.
+
 ## How To Use This Plug-in
 
 Before anything else, you'll need to sign up for a [Tinylytics.app](https://tinylytics.app) account for the plug-in to work. Be sure to use the 20% off coupon above.
@@ -108,7 +112,3 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 ## Need Help?
 
 If you have questions or find a bug in the plug-in itself, connect with me on [Micro.blog](https://micro.blog/jimmitchell) or go old-school and shoot me an [email](mailto:hello@jimmitchell.org). For Tinylytics platform support, contact [@vincent](https://micro.blog/vincent) on Micro.blog, or email him at [hello@tinylytics.app](mailto:hello@tinylytics.app).
-
-## Support Continued Development
-
-If you find this plug-in is worth supporting financially, you can make a donation on my [Ko-fi](https://ko-fi.com/jimmitchellmedia) page. If you decide to, thank you very much in advance for your support.
