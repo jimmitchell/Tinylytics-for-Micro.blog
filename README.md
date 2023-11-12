@@ -50,11 +50,11 @@ If you want to display the total hits on your site, check the "Show Country Flag
 
 If you'd like to avoid making changes to your theme template files, you can use select shortcodes instead. To add a kudos, post view counter or country flags to a post, simply add them using the following shortcodes:
 
-````
+```
 {{< tinykudos >}}
 {{< tinyhits >}}
 {{< tinyflags >}}
-````
+```
 
 An example of using shortcodes looks something like this:
 
@@ -66,9 +66,9 @@ An example of using shortcodes looks something like this:
 
 Maybe you'd like to display a hit counter, uptime, webring link and/or country flags in the global custom footer of your Micro.blog site without having to change any template files. Since shortcodes don't work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
 
-````
+```
 {{ partial "tinyhits/embed.html" (dict "context" . ) }}
-````
+```
 
 An example of that looks like this:
 
@@ -79,8 +79,7 @@ An example of that looks like this:
 
 Out of the box, Tinylytics works great without any styles applied, but if you'd like to tweak how things look to better match your site, here are the CSS classes:
 
-````
-
+```
 .tiny_counter {
     /* Styles the entire counter <span> for a custom footer embed only */
 }
@@ -108,8 +107,7 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 .did_select {
     /* Styles the Kudos button to appear different/inactive once a Kudo is given. Works for both shortcode and embed methods. */
 }
-
-````
+```
 
 ## Need Help?
 
