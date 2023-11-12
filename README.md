@@ -101,7 +101,7 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 }
 
 .tinylytics_kudos {
-    /* this class styles the entire Kudos button. Works for both shortcode and embed methods. * /
+    /* this class styles the entire Kudos button. Works for both shortcode and embed methods. */
 }
 
 .did_select {
