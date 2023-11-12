@@ -4,7 +4,7 @@
 
 A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 
->[!NOTE]
+>[!IMPORTANT]
 > ## Save 20% on a Tinylytics Subscription
 > 
 > Save 20% off your first year of Tinylytics by using this coupon code when you sign up:
@@ -13,7 +13,7 @@ A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 > 
 > *Note: This coupon is only good for new accounts and requires you to select the yearly plan option at sign up. See the sign up link below.*
 
->[!IMPORTANT]
+>[!NOTE]
 > ## Support Development
 >
 > If you believe this plug-in is worth supporting financially, feel free to make a donation on my [Ko-fi](https://ko-fi.com/jimmitchellmedia) page. A donation is not needed to use the plug-in, but if you do choose to support my work, you have my undying gratitude -- and you'll get priority support.
