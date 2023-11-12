@@ -80,6 +80,7 @@ An example of that looks like this:
 Out of the box, Tinylytics works great without any styles applied, but if you'd like to tweak how things look to better match your site, here are the CSS classes:
 
 ````
+
 .tiny_counter {
     /* Styles the entire counter <span> for a custom footer embed only */
 }
@@ -107,6 +108,7 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 .did_select {
     /* Styles the Kudos button to appear different/inactive once a Kudo is given. Works for both shortcode and embed methods. */
 }
+
 ````
 
 ## Need Help?
