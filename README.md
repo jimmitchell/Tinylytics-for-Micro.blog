@@ -17,6 +17,8 @@ A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 > ## Support Development
 >
 > If you believe this plug-in is worth supporting financially, feel free to make a donation on my [Ko-fi](https://ko-fi.com/jimmitchellmedia) page. A donation is not needed to use the plug-in, but if you do choose to support my work, you have my undying gratitude -- and you'll get priority support.
+>
+> [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/E1E3MTQ61)
 
 ## How To Use This Plug-in
 
