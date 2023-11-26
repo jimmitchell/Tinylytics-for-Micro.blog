@@ -1,12 +1,19 @@
 {{ $context := .context }}
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_hits) }}
-    <span class="tiny_counter"><a href="https://tinylytics.app" title="Stats via Tinylytics">Tinylytics</a>: <span class="tinylytics_hits"></span></span>
+    <span class="tiny_counter">
+        {{ if ($context.Site.Params.public_stats) }}
+            <a href="" target="_blank" class="tinylytics_public_stats">My Public Stats</a>: <span class="tinylytics_hits"></span></span>
+        {{ else }}
+            <a href="https://tinylytics.app" target="_blank" title="Stats via Tinylytics">Tinylytics</a>: <span class="tinylytics_hits"></span></span>
+        {{ end }}
 {{ end }}
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_uptime) }}
     <span class="tiny_uptime">Uptime: <span class="tinylytics_uptime"></span></span>
 {{ end }}
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_webring) }}
-    <span class="tiny_webring"><a href="" class="tinylytics_webring">{{ $context.Site.Params.webring_label }}</a></span>
+    <span class="tiny_webring">
+        <a href="" class="tinylytics_webring" target="_blank">{{ if $context.Site.Params.webring_avatar }}<img class="tinylytics_webring_avatar" src="" style="display:none;"/>{{ end }}<span>{{ $context.Site.Params.webring_label }}</span></a>
+    </span>
 {{ end }}
 {{ if and (ne ($context.Site.Params.site_id | default "") "") ($context.Site.Params.show_countries) }}
     <span class="tiny_countries"><span class="tinylytics_countries"></span></span>
