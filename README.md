@@ -1,6 +1,6 @@
 # Tinylytics-for-Micro.blog
 
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/TinylyticsHeaderArt.png" alt="Tinylytics for Micro.blog title" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/TinylyticsHeaderArt.png" alt="Tinylytics for Micro.blog title" width="800" />
 
 A Micro.blog plug-in to easily add Tinylytics tracking to your site.
 
@@ -26,11 +26,11 @@ Before anything else, you'll need to sign up for a [Tinylytics.app](https://tiny
 
 Once you've signed up and have the plug-in installed, enter your unique site id from your [Tinylytics.app](https://tinylytics.app) site configuration page:
 
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics.jpg" alt="tinylytics site id example" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics.jpg" alt="tinylytics site id example" width="800" />
 
 ## Tinylytics Settings
 
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics-settings.png" alt="tinylytics site id example" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics-settings.png" alt="tinylytics configuration example" width="800" />
 
 * **Tinylytics Site Id** -- This is your unique site id & embed code which can be found near the bottom of your site configuration page on Tinylytics. For the plugin to work, a site id must be entered in the plugin settings.
 * **Show Hits?** -- This setting enables the display of how many hits your site has recieved overall, as well as for the unique page hits when adding the shortcode to a page. More on shortcodes below.
@@ -53,7 +53,7 @@ Maybe you'd like to display a hit counter, uptime, webring link and/or country f
 
 An example of that looks like this:
 
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="800" />
 
 ## Shortcodes
 
@@ -67,7 +67,7 @@ If you'd like to avoid making changes to your theme template files, you can use 
 
 An example of using shortcodes looks something like this:
 
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="800" />
 
 **A new feature:** Adding a ``{{< tinyhits >}}`` shortcode to a post will give the number of views *for just that post*, not the overall site views.
 
