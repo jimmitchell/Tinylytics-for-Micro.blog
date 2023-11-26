@@ -26,27 +26,32 @@ Once you've signed up and have the plug-in installed, enter your unique site id 
 
 <img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics.jpg" alt="tinylytics site id example" width="1000" />
 
-## Displaying Hits
+## Tinylytics Settings
 
-If you want to display the total hits on your site, check the "Show Hits?" checkbox. Check out the Tinylytics "[Showing a hit counter](https://tinylytics.app/docs/show_hit_counter)" help article for more details.
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/tinylytics-settings.png" alt="tinylytics site id example" width="1000" />
 
-## Displaying Uptime
+* **Tinylytics Site Id** -- This is your unique site id & embed code which can be found near the bottom of your site configuration page on Tinylytics. For the plugin to work, a site id must be entered in the plugin settings.
+* **Show Hits?** -- This setting enables the display of how many hits your site has recieved overall, as well as for the unique page hits when adding the shortcode to a page. More on shortcodes below.
+* **Link to your public stats?** -- If you've enabled public stats in your Tinylytics site configuration, enabling this option will add a link to your public stats page. If disabled, it simply links back to the main Tinylytics site.
+* **Show uptime?** -- Uptime is a premium feature for paying Tinylytics subscribers. If you have a premium membership and want to display uptime, enable this option. If you do not have a premium membership, it's recommended that you leave this option disabled.
+* **Show country flags?** -- This option will display the country flags of visitors to your site in either the footer embed code or a shortcode added to a page. Again, more on shortcodes below.
+* **Show Kudos?** -- Kudos allow users to leave feedback about the post or page they're viewing. Enabling this option will allow you to add the Kudo shortcode to a page or post that users can interact with. Leaving disabled will prevent Kudos from being displayed.
+* **Kudos label** -- You can add a custom label to the Kudos counter as either text or an emoji. If you leave this option empty, a 👋 emoji will be shown by default.
+* **Show Webring?** -- This option enables the Tinylytics webring feature that will display a link to another Indie Webring site. This is a great way to help your readers discover other blogger's content.
+* **Webring label** -- You can set a custom webring lable for the link that's displayed. If nothing is set, 🕸️💍 will be displayed.
+* **Show webring avatar?** -- A new feature in version 3.1 and later, this will display a webring's avatar to the left of your webring label.
 
-If you want to display the uptime of your site, check the "Show Uptime?" checkbox. Check out the Tinylytics "[Showing Uptime on your site](https://tinylytics.app/docs/showing_uptime)" help article for more details. **Note:** Uptime monitoring is a paid account feature. If you enable the "Show Uptime?" checkbox but to not have a paid account, you'll only see an uptime label.
+## Showing Total Hits, Uptime, Webring Link and Country Flags in Your Micro.blog Footer
 
-## Displaying Post Kudos
+Maybe you'd like to display a hit counter, uptime, webring link and/or country flags in the global custom footer of your Micro.blog site without having to change any template files. Since shortcodes don't work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
 
-If you want to display a Kudos counter on individual post pages, check the "Show Kudos?" checkbox. See the Tinylytics "[Showing kudos](https://tinylytics.app/docs/showing_kudos)" help article for more details. In addition to a Kudos counter, you can set a label using any combination of emoji and/or text. If you don't set your own label, the default emoji will be "👋".
+```hugo
+{{ partial "tinyhits/embed.html" (dict "context" . ) }}
+```
 
-## Showing the Webring Link
+An example of that looks like this:
 
-If you want to display the Tinylytics Webring Link on your site, check the "Show Webring?" checkbox. See the Tinylytics "[Showing the webring](https://tinylytics.app/docs/showing_webring)" help article for more details. You can set the link text using using any combination of emoji and/or text. If you don't set your own label.
-
-## Displaying Country Flags
-
-If you want to display the total hits on your site, check the "Show Country Flags?" checkbox. Check out the Tinylytics "[Showing visited countries](https://tinylytics.app/docs/showing_countries)" help article for more details.
-
----
+<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
 
 ## Shortcodes
 
@@ -63,19 +68,6 @@ An example of using shortcodes looks something like this:
 <img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/shortcode-example.png" alt="tinylytics hits shorcode" width="1000" />
 
 **A new feature:** Adding a ``{{< tinyhits >}}`` shortcode to a post will give the number of views *for just that post*, not the overall site views.
-
-## Showing Total Hits, Uptime, Webring Link and Country Flags in Your Micro.blog Footer
-
-Maybe you'd like to display a hit counter, uptime, webring link and/or country flags in the global custom footer of your Micro.blog site without having to change any template files. Since shortcodes don't work in the Micro.blog custom footer, this can be accomplished using a partial embed instead.
-
-```hugo
-{{ partial "tinyhits/embed.html" (dict "context" . ) }}
-```
-
-An example of that looks like this:
-
-<img src="https://raw.githubusercontent.com/jimmitchell/Tinylytics-for-Micro.blog/main/screenshots/footer-partial-example.png" alt="tinylytics kudos shorcode" width="1000" />
-
 
 ## Tinylytics Styles
 
@@ -113,4 +105,4 @@ Out of the box, Tinylytics works great without any styles applied, but if you'd 
 
 ## Need Help?
 
-If you have questions or find a bug in the plug-in itself, connect with me on [Micro.blog](https://micro.blog/jimmitchell) or go old-school and shoot me an [email](mailto:hello@jimmitchell.org). For Tinylytics platform support, contact [@vincent](https://micro.blog/vincent) on Micro.blog, or email him at [hello@tinylytics.app](mailto:hello@tinylytics.app).
+If you have questions or find a bug in the plug-in itself, connect with me on [Micro.blog](https://micro.blog/jimmitchell), [Mastodon](https://mastodon.social/@jimmitchell), or go old-school and shoot me an [email](mailto:hello@jimmitchell.org). For Tinylytics platform support, contact [@vincent](https://micro.blog/vincent) on Micro.blog, or email him at [hello@tinylytics.app](mailto:hello@tinylytics.app).

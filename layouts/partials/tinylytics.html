@@ -8,6 +8,14 @@
         {{ end }}
         {{ $queryParameters = ( print $queryParameters "hits") }}
     {{ end }}
+    {{ if .Site.Params.public_stats }}
+        {{ if (eq ($queryParameters | len) 0) }}
+            {{ $queryParameters = ( print $queryParameters "?") }}
+        {{ else }}
+            {{ $queryParameters = ( print $queryParameters "&") }}
+        {{ end }}
+        {{ $queryParameters = ( print $queryParameters "publicstats") }}
+    {{ end }}
     {{ if .Site.Params.show_uptime}}
         {{ if (eq ($queryParameters | len) 0) }}
             {{ $queryParameters = ( print $queryParameters "?") }}
@@ -23,6 +31,9 @@
             {{ $queryParameters = ( print $queryParameters "&") }}
         {{ end }}
         {{ $queryParameters = ( print $queryParameters "webring") }}
+        {{ if .Site.Params.webring_avatar}}
+            {{ $queryParameters = ( print $queryParameters "=avatars") }}
+        {{ end }}
     {{ end }}
     {{ if .Site.Params.show_countries}}
         {{ if (eq ($queryParameters | len) 0) }}

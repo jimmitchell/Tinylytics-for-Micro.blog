@@ -1,5 +1,5 @@
 {
-  "version": "3.0.1",
+  "version": "3.1.0",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -14,6 +14,11 @@
     {
       "field": "params.show_hits",
       "label": "Show Hits?",
+      "type": "boolean"
+    },
+    {
+      "field": "params.public_stats",
+      "label": "Link to your public stats?",
       "type": "boolean"
     },
 	  {
@@ -45,6 +50,11 @@
       "field": "params.webring_label",
       "label": "Webring Label",
       "placeholder": "Enter any combination of text or emoji 🕸️💍"
+    },
+    {
+      "field": "params.webring_avatar",
+      "label": "Show webring avatar?",
+      "type": "boolean"
     }
   ]
 }
