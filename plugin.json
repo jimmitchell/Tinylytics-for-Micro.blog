@@ -1,5 +1,5 @@
 {
-  "version": "3.1.0",
+  "version": "3.1.1",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -13,7 +13,7 @@
     },
     {
       "field": "params.show_hits",
-      "label": "Show Hits?",
+      "label": "Display hits?",
       "type": "boolean"
     },
     {
@@ -23,17 +23,17 @@
     },
 	  {
       "field": "params.show_uptime",
-      "label": "Show Uptime?",
+      "label": "Display uptime?",
        "type": "boolean"
     },
     {
       "field": "params.show_countries",
-      "label": "Show Country Flags?",
+      "label": "Display country flags?",
        "type": "boolean"
     },
     {
       "field": "params.show_kudos",
-      "label": "Show Kudos?",
+      "label": "Display Kudos?",
       "type": "boolean"
     },
     {
@@ -43,7 +43,7 @@
     },
     {
       "field": "params.show_webring",
-      "label": "Show Webring?",
+      "label": "Display Webring?",
        "type": "boolean"
     },
 	  {
@@ -53,7 +53,7 @@
     },
     {
       "field": "params.webring_avatar",
-      "label": "Show webring avatar?",
+      "label": "Display webring avatar?",
       "type": "boolean"
     }
   ]
