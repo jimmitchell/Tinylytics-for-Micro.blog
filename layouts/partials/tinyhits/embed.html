@@ -7,7 +7,7 @@
         <span class="tiny_uptime">Uptime: <span class="tinylytics_uptime"></span></span>
     {{ end }}
     {{ if $context.Site.Params.show_webring }}
-        <span class="tiny_webring"><a href="" class="tinylytics_webring" target="_blank">{{ if not (ne ($context.Site.Params.webring_label | default "") "") }}🕸️{{ end }}{{ if $context.Site.Params.webring_avatar }}<img class="tinylytics_webring_avatar" src="" style="display:none;"/>{{ end }}{{ if not (ne ($context.Site.Params.webring_label | default "") "") }}💍{{ end }}<span>{{ $context.Site.Params.webring_label }}</span></a></span>
+        <span class="tiny_webring"><a href="" class="tinylytics_webring" target="_blank" title="Tinylytics Webring">{{ if not (ne ($context.Site.Params.webring_label | default "") "") }}🕸️{{ end }}{{ if $context.Site.Params.webring_avatar }}<img class="tinylytics_webring_avatar" src="" style="display:none;"/>{{ end }}{{ if not (ne ($context.Site.Params.webring_label | default "") "") }}💍{{ end }}{{ if ne ($context.Site.Params.webring_label | default "") "" }}<span>{{ $context.Site.Params.webring_label }}</span>{{ end }}</a></span>
     {{ end }}
     {{ if $context.Site.Params.show_countries }}
         <span class="tiny_countries"><span class="tinylytics_countries"></span></span>
