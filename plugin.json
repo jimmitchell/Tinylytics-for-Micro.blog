@@ -1,5 +1,5 @@
 {
-  "version": "3.1.1",
+  "version": "3.2.0",
   "title": "Tinylytics for Micro.blog",
   "description": "A plug-in to easily add Tinylytics to your Micro.blog site.",
   "includes": [
@@ -13,7 +13,7 @@
     },
     {
       "field": "params.show_hits",
-      "label": "Display hits?",
+      "label": "Display visitor hits?",
       "type": "boolean"
     },
     {
@@ -22,6 +22,10 @@
       "type": "boolean"
     },
 	  {
+      "field": "params.stats_label",
+      "label": "Public Stats Label",
+      "placeholder": "Add a custom public stats label"
+    },{
       "field": "params.show_uptime",
       "label": "Display uptime?",
        "type": "boolean"

@@ -1,7 +1,7 @@
 {{ $context := .context }}
 {{ if ne ($context.Site.Params.site_id | default "") "" }}
     {{ if $context.Site.Params.show_hits }}
-        <span class="tiny_counter">{{ if ($context.Site.Params.public_stats) }}<a href="" target="_blank" class="tinylytics_public_stats">Site Stats</a>:{{ else }}<a href="https://tinylytics.app" target="_blank" title="Stats via Tinylytics">Tinylytics</a>:{{ end }}&nbsp;<span class="tinylytics_hits"></span></span>
+        <span class="tiny_counter">{{ if ($context.Site.Params.public_stats) }}<a href="" target="_blank" class="tinylytics_public_stats">{{ if (ne ($context.Site.Params.stats_label | default "") "") }}{{ $context.Site.Params.stats_label }}{{else}}Site Stats{{end}}</a>:{{ else }}<a href="https://tinylytics.app" target="_blank" title="Stats via Tinylytics">Tinylytics</a>:{{ end }}&nbsp;<span class="tinylytics_hits"></span></span>
     {{ end }}
     {{ if $context.Site.Params.show_uptime }}
         <span class="tiny_uptime">Uptime: <span class="tinylytics_uptime"></span></span>
