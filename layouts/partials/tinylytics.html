@@ -1,12 +1,12 @@
-{{ if ne (.Site.Params.site_id | default "") "" }}
-    {{ $url := ( print "https://tinylytics.app/embed/" .Site.Params.site_id  ".js?" ) }}
-    {{ if .Site.Params.show_hits }} {{ $url = ( print $url "hits&" ) }} {{ end }}
-    {{ if .Site.Params.public_stats }} {{ $url = ( print $url "publicstats&" ) }} {{ end }}
-    {{ if .Site.Params.show_uptime }} {{ $url = ( print $url "uptime&" ) }} {{ end }}
-    {{ if .Site.Params.show_countries }} {{ $url = ( print $url "countries&") }} {{ end }}
-    {{ if and .Site.Params.show_webring (not (.Site.Params.webring_avatar)) }} {{ $url = ( print $url "webring&" ) }} {{ end }}
-    {{ if and .Site.Params.show_webring .Site.Params.webring_avatar }} {{ $url = ( print $url "webring=avatars&" ) }} {{ end }}
-    {{ if and .Site.Params.show_kudos (not (ne (.Site.Params.kudos_label | default "") "")) }} {{ $url = ( print $url "kudos&") }} {{ end }}
-    {{ if and .Site.Params.show_kudos (ne (.Site.Params.kudos_label | default "") "") }} {{ $url = ( print $url "kudos=" .Site.Params.kudos_label ) }} {{ end }}
+{{- if ne (.Site.Params.site_id | default "") "" }}
+    {{- $url := ( print "https://tinylytics.app/embed/" .Site.Params.site_id  ".js?" ) }}
+    {{- if .Site.Params.show_hits }} {{- $url = ( print $url "hits&" ) }} {{- end }}
+    {{- if .Site.Params.public_stats }} {{- $url = ( print $url "publicstats&" ) }} {{- end }}
+    {{- if .Site.Params.show_uptime }} {{- $url = ( print $url "uptime&" ) }} {{- end }}
+    {{- if .Site.Params.show_countries }} {{- $url = ( print $url "countries&") }} {{- end }}
+    {{- if and .Site.Params.show_webring (not (.Site.Params.webring_avatar)) }} {{- $url = ( print $url "webring&" ) }} {{- end }}
+    {{- if and .Site.Params.show_webring .Site.Params.webring_avatar }} {{- $url = ( print $url "webring=avatars&" ) }} {{- end }}
+    {{- if and .Site.Params.show_kudos (not (ne (.Site.Params.kudos_label | default "") "")) }} {{- $url = ( print $url "kudos&") }} {{- end }}
+    {{- if and .Site.Params.show_kudos (ne (.Site.Params.kudos_label | default "") "") }} {{- $url = ( print $url "kudos=" .Site.Params.kudos_label ) }} {{- end }}
     <script defer src='{{ strings.TrimRight "?&" $url }}'></script>
-{{ end }}
+{{- end }}
